@@ -1,0 +1,7 @@
+i've not been on github for a while, i didnt remember making this repo.
+Now i recently deleted alot of files on my pc, including a script that i was going to upload to here.
+The script was a bot that would tell random facts from a script including multiple facts.
+Source: https://bestlifeonline.com/useless-facts/
+One Day i will remake this script and probably make it better and release it on this repository or make a new one just for that specific script.
+i will leave a video i recorded on youtube of the bot.
+https://www.youtube.com/watch?v=9A9Z7AfjhsA
