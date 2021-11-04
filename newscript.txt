@@ -10,3 +10,9 @@ https://www.youtube.com/watch?v=9A9Z7AfjhsA
 update:
 some scripts are on my pastebin
 https://pastebin.com/u/cOpEtriNeYT1
+
+
+
+UPDATE 2:
+I've found the original script for the factbot on my pastebin the script is public but i will make it private and upload it on here.
+im gonna fix the script up because its buggy.
