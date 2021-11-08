@@ -16,3 +16,10 @@ https://pastebin.com/u/cOpEtriNeYT1
 UPDATE 2:
 I've found the original script for the factbot on my pastebin the script is public but i will make it private and upload it on here.
 im gonna fix the script up because its buggy.
+
+
+UPDATE 3:
+The script has been published onto a new repository 
+https://github.com/cOpEtriNe/RBLXFactBot
+it has alot of new features compared to the old script, which only had around 1-2 updates.
+And will continue to get updates
