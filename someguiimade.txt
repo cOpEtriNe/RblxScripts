@@ -25,6 +25,8 @@ Frame.BackgroundTransparency = 0.400
 Frame.Position = UDim2.new(0.087878786, 0, 0.386174023, 0)
 Frame.Size = UDim2.new(0, 472, 0, 412)
 Frame.Draggable = true
+Frame.Active = true
+Frame.visible = true
 
 Title.Name = "Title"
 Title.Parent = Frame
