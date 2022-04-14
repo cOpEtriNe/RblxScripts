@@ -1,5 +1,7 @@
---PRISON LIFE - KICK GUI--
-local jakeskickgui = Instance.new("ScreenGui")
+-- CREDIT TO ORIGINAL PERSON WHO MADE THIS!!!
+-- (I have edited this, it was a prison life gui before.)
+
+local KickFrame = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
 local kick = Instance.new("TextButton")
@@ -8,17 +10,19 @@ local title_2 = Instance.new("TextLabel")
 local close = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
+
 --Properties:
-jakeskickgui.Name = "jakeskickgui"
-jakeskickgui.Parent = game.CoreGui
+KickFrame.Name = "KickFrame"
+KickFrame.Parent = game.CoreGui
 
 main.Name = "main"
-main.Parent = jakeskickgui
+main.Parent = KickFrame
 main.BackgroundColor3 = Color3.new(0, 0, 0)
 main.Position = UDim2.new(0.276372612, 0, 0.55282557, 0)
 main.Size = UDim2.new(0, 234, 0, 146)
 main.Active = true
 main.Draggable = true
+main.Visible = true
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
