@@ -1,0 +1,116 @@
+-- Created by cOpEtriNe#2745
+-- created under 5 minutes lol
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local AutoLift = Instance.new("TextButton")
+local AutoSell = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.210689873, 0, 0.631578922, 0)
+Frame.Size = UDim2.new(0, 220, 0, 263)
+Frame.Active = true
+Frame.Visible = true
+Frame.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.Size = UDim2.new(0, 219, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Lifting Simulator GUI "
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 24.000
+
+AutoLift.Name = "AutoLift"
+AutoLift.Parent = Frame
+AutoLift.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AutoLift.Position = UDim2.new(0, 0, 0.285171092, 0)
+AutoLift.Size = UDim2.new(0, 219, 0, 50)
+AutoLift.Font = Enum.Font.SourceSans
+AutoLift.Text = "Auto Lift"
+AutoLift.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoLift.TextSize = 24.000
+
+AutoSell.Name = "AutoSell"
+AutoSell.Parent = Frame
+AutoSell.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AutoSell.Position = UDim2.new(0, 0, 0.543726265, 0)
+AutoSell.Size = UDim2.new(0, 219, 0, 50)
+AutoSell.Font = Enum.Font.SourceSans
+AutoSell.Text = "Auto Sell"
+AutoSell.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoSell.TextSize = 24.000
+
+Title_2.Name = "Title"
+Title_2.Parent = Frame
+Title_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.Position = UDim2.new(0, 0, 0.809885919, 0)
+Title_2.Size = UDim2.new(0, 220, 0, 50)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Created by cOpEtriNe#2745"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 24.000
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.836363614, 0, -0.0798479095, 0)
+Close.Size = UDim2.new(0, 35, 0, 21)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 34.000
+Close.TextWrapped = true
+
+-- Scripts:
+
+local function NJPKLN_fake_script() -- AutoLift.LocalScript 
+	local script = Instance.new('LocalScript', AutoLift)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			local args = {
+				[1] = {
+					[1] = "GainMuscle"
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))	
+		end)
+	end)
+end
+coroutine.wrap(NJPKLN_fake_script)()
+local function YVWEK_fake_script() -- AutoSell.LocalScript 
+	local script = Instance.new('LocalScript', AutoSell)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			local args = {
+				[1] = {
+					[1] = "SellMuscle"
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		end)
+	end)
+end
+coroutine.wrap(YVWEK_fake_script)()
+local function KKDGBZF_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Frame:Destroy()
+	end)
+end
+coroutine.wrap(KKDGBZF_fake_script)()
