@@ -1,6 +1,6 @@
 -- Nicehook BETA
 -- created by cOpEtriNe
-
+-- still cant be bothered to add anything..
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -9,7 +9,6 @@ local Close = Instance.new("TextButton")
 local TestingTrash = Instance.new("TextButton")
 local Scripts = Instance.new("TextButton")
 local Server = Instance.new("TextButton")
-local TimeLocal = Instance.new("TextLabel")
 local TestingFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Title_2 = Instance.new("TextLabel")
@@ -19,6 +18,11 @@ local ScriptsFrame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local Title_3 = Instance.new("TextLabel")
 local IY = Instance.new("TextButton")
+local TimeLocal = Instance.new("TextLabel")
+local ServerFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Title_4 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -100,19 +104,6 @@ Server.TextScaled = true
 Server.TextSize = 14.000
 Server.TextWrapped = true
 
-TimeLocal.Name = "TimeLocal"
-TimeLocal.Parent = Server
-TimeLocal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TimeLocal.BackgroundTransparency = 1.000
-TimeLocal.Position = UDim2.new(0.937437296, 0, -3.71589518, 0)
-TimeLocal.Size = UDim2.new(0, 185, 0, 28)
-TimeLocal.Font = Enum.Font.SourceSans
-TimeLocal.Text = "Time: "
-TimeLocal.TextColor3 = Color3.fromRGB(0, 0, 0)
-TimeLocal.TextScaled = true
-TimeLocal.TextSize = 14.000
-TimeLocal.TextWrapped = true
-
 TestingFrame.Name = "TestingFrame"
 TestingFrame.Parent = Frame
 TestingFrame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
@@ -163,7 +154,7 @@ Title_3.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Title_3.BorderSizePixel = 2
 Title_3.Size = UDim2.new(0, 122, 0, 28)
 Title_3.Font = Enum.Font.SourceSans
-Title_3.Text = "Nicehook Scipts"
+Title_3.Text = "Nicehook Scripts"
 Title_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 Title_3.TextScaled = true
 Title_3.TextSize = 14.000
@@ -183,17 +174,62 @@ IY.TextScaled = true
 IY.TextSize = 14.000
 IY.TextWrapped = true
 
+TimeLocal.Name = "TimeLocal"
+TimeLocal.Parent = Frame
+TimeLocal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TimeLocal.BackgroundTransparency = 1.000
+TimeLocal.Position = UDim2.new(0.234219268, 0, 0, 0)
+TimeLocal.Size = UDim2.new(0, 185, 0, 28)
+TimeLocal.Font = Enum.Font.SourceSans
+TimeLocal.Text = "Time: "
+TimeLocal.TextColor3 = Color3.fromRGB(0, 0, 0)
+TimeLocal.TextScaled = true
+TimeLocal.TextSize = 14.000
+TimeLocal.TextWrapped = true
+
+ServerFrame.Name = "ServerFrame"
+ServerFrame.Parent = Frame
+ServerFrame.Active = true
+ServerFrame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+ServerFrame.Position = UDim2.new(0.217411235, 0, 0.0964630246, 0)
+ServerFrame.Size = UDim2.new(0, 471, 0, 281)
+
+UICorner_4.Parent = ServerFrame
+
+Title_4.Name = "Title"
+Title_4.Parent = ServerFrame
+Title_4.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Title_4.BorderSizePixel = 2
+Title_4.Size = UDim2.new(0, 122, 0, 28)
+Title_4.Font = Enum.Font.SourceSans
+Title_4.Text = "Server"
+Title_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+TextLabel_2.Parent = ServerFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0.286624193, 0, 0.355871886, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "NOTHING LOL JDSHNFKJSDFHJDSK"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
 -- Scripts:
 
-local function SKOBPDB_fake_script() -- Close.LocalScript 
+local function OLGIS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Frame:Destroy()
 	end)
 end
-coroutine.wrap(SKOBPDB_fake_script)()
-local function VGYQ_fake_script() -- TestingTrash.LocalScript 
+coroutine.wrap(OLGIS_fake_script)()
+local function KJCGQZC_fake_script() -- TestingTrash.LocalScript 
 	local script = Instance.new('LocalScript', TestingTrash)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -201,8 +237,8 @@ local function VGYQ_fake_script() -- TestingTrash.LocalScript
 		script.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(VGYQ_fake_script)()
-local function KQKABFB_fake_script() -- Scripts.LocalScript 
+coroutine.wrap(KJCGQZC_fake_script)()
+local function NINYG_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -210,18 +246,20 @@ local function KQKABFB_fake_script() -- Scripts.LocalScript
 		script.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(KQKABFB_fake_script)()
-local function EQICKHS_fake_script() -- TimeLocal.LocalScript 
-	local script = Instance.new('LocalScript', TimeLocal)
-
-	script.Parent.Text = "Time: "..os.date()
-end
-coroutine.wrap(EQICKHS_fake_script)()
-local function MXOX_fake_script() -- IY.LocalScript 
+coroutine.wrap(NINYG_fake_script)()
+local function SRFQE_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(MXOX_fake_script)()
+coroutine.wrap(SRFQE_fake_script)()
+local function ZXBIAN_fake_script() -- TimeLocal.LocalScript 
+	local script = Instance.new('LocalScript', TimeLocal)
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		script.Parent.Text = "Time: "..os.date()
+	end)
+end
+coroutine.wrap(ZXBIAN_fake_script)()
